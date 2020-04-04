@@ -1,6 +1,8 @@
 package pl.cardsagainstcards.model;
 
-public class Card {
+import java.io.Serializable;
+
+public class Card implements Serializable {
     private Integer id;
     private CardSet parentCardSet;
     private CardType cardType;
