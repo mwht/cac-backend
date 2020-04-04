@@ -15,7 +15,7 @@ public class CardController {
     @Autowired
     private CardRepository cardRepository;
 
-    @GetMapping("/api/cards/{accessionId}")
+    @GetMapping("/api/card/{accessionId}")
     public List<CardDto> getCardsByAccessionId(@PathVariable String accessionId) {
         return cardRepository.findCardsByParentCardSetAccessionId(accessionId);
     }
