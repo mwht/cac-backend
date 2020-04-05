@@ -46,6 +46,8 @@ public class SessionController {
 
         session.setId(id);
         session.setUsedCards(new ArrayList<>());
+        session.setPlayers(new ArrayList<>());
+        session.setCurrentPlayer(null);
 
         if (session.getId() == null)
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
